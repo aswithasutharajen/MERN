@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 6;
+            animation-direction: alternate;
+            animation-timing-function:ease-in;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        div:hover
+        {
+            transform: rotate(180deg);
+        }
+        @keyframes anime
+        {
+            0%{background-color: aquamarine; left: 0px; top: 0px;}
+            25%{background-color: bisque; left:200px; top: 0px;}
+            50%{background-color: bisque;left: 200px; top: 200px;}
+            80%{background-color: chartreuse;left:0px;top:200px;}
+            100%{background-color: brown;left:0px;top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
